@@ -1,0 +1,79 @@
+body, html{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Roboto-Regular;
+    src: url('../fonts/Roboto-Regular/roboto-regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Roboto-Regular/roboto-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/Roboto-Regular/roboto-regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/Roboto-Regular/roboto-regular.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../fonts/Roboto-Regular/roboto-regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/Roboto-Regular/roboto-regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+.wrap{
+    background: #070d17;
+}
+.wrapper{
+    width: 1120px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.wrap_header{
+
+}
+.wrap_top-menu{
+    float: right;
+}
+.wrap_top-menu ul{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style:none;
+}
+.wrap_top-menu ul li{
+    float: left;
+    padding-top: 23px;
+    padding-bottom: 23px;
+}
+.wrap_top-menu ul li:last-child{
+    margin-left: 43px;
+    position: relative;
+}
+.wrap_top-menu ul li:last-child:before{
+    content: '';
+    position: absolute;
+    height: 25px;
+    border: solid 1px rgba(255, 255, 255, 0.16);
+    top: 18px;
+    left: -19px;
+
+
+}
+
+
+.wrap_top-menu ul li:not(:first-child){
+    margin-left: 40px;
+}
+.wrap_top-menu ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Roboto-Regular;
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+    opacity: 0.64;
+    letter-spacing: 0.5px;
+}
