@@ -12,6 +12,29 @@ body, html{
     url('../fonts/Roboto-Regular/roboto-regular.ttf')  format('truetype'), /* Safari, Android, iOS */
     url('../fonts/Roboto-Regular/roboto-regular.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
+@font-face {
+    font-family: Roboto-Light;
+    src: url('../fonts/Roboto-Light/Roboto-Light.eot');
+    src: url('../fonts/Roboto-Light/Roboto-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Roboto-Light/Roboto-Light.woff2') format('woff2'),
+    url('../fonts/Roboto-Light/Roboto-Light.woff') format('woff'),
+    url('../fonts/Roboto-Light/Roboto-Light.ttf') format('truetype'),
+    url('../fonts/Roboto-Light/Roboto-Light.svg#Roboto-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Roboto-Medium;
+    src: url('../fonts/Roboto-Medium/Roboto-Medium.eot');
+    src: url('../fonts/Roboto-Medium/Roboto-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Roboto-Medium/Roboto-Medium.woff2') format('woff2'),
+    url('../fonts/Roboto-Medium/Roboto-Medium.woff') format('woff'),
+    url('../fonts/Roboto-Medium/Roboto-Medium.ttf') format('truetype'),
+    url('../fonts/Roboto-Medium/Roboto-Medium.svg#Roboto-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
 
 .clearfix:before,
 .clearfix:after {
@@ -22,18 +45,33 @@ body, html{
 .clearfix:after {
     clear: both;
 }
-.wrap{
+
+/*header*/
+header{
+    z-index: 99999;
+    position: fixed;
+    width: 100%;
+}
+.wrap_header{
     background: #070d17;
 }
 .wrapper{
     width: 1120px;
     margin: 0 auto;
+}
+.wrap{
     padding-left: 10px;
     padding-right: 10px;
 }
-.wrap_header{
-
+.logo{
+    background: url("../images/logo.png") no-repeat;
+    height: 31px;
+    width: 107px;
+    float: left;
+    margin-top: 17.2px;
+    text-decoration: none;
 }
+/*menu*/
 .wrap_top-menu{
     float: right;
 }
@@ -48,6 +86,9 @@ body, html{
     padding-top: 23px;
     padding-bottom: 23px;
 }
+.wrap_top-menu ul li:not(:first-child){
+    margin-left: 40px;
+}
 .wrap_top-menu ul li:last-child{
     margin-left: 43px;
     position: relative;
@@ -56,16 +97,9 @@ body, html{
     content: '';
     position: absolute;
     height: 25px;
-    border: solid 1px rgba(255, 255, 255, 0.16);
+    border-left: solid 1px rgba(255, 255, 255, 0.16);
     top: 18px;
     left: -19px;
-
-
-}
-
-
-.wrap_top-menu ul li:not(:first-child){
-    margin-left: 40px;
 }
 .wrap_top-menu ul li a{
     text-decoration: none;
@@ -76,4 +110,281 @@ body, html{
     color: #fff;
     opacity: 0.64;
     letter-spacing: 0.5px;
+}
+/*content index*/
+.wrap_content{
+    position: relative;
+    background: url("../images/bg_main.png") no-repeat;
+    height: 100%;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+}
+.wrap_booking img{
+    display: block;
+    margin: 136px auto 0 auto;
+}
+.wrap_booking h1{
+    font-size: 36px;
+    font-family: Roboto-Light;
+    line-height: 40px;
+    letter-spacing: 0.7px;
+    text-align: center;
+    color: #ffffff;
+    margin-top: -40px;
+    margin-bottom: 0;
+}
+.wrap_booking p{
+    opacity: 0.8;
+    font-family: Roboto-Regular;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 18px;
+    margin-bottom: 0;
+}
+.wrap_booking .btn-booking{
+    display: block;
+    margin: 20px auto 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    background: #345fdd;
+    width:374px;
+    font-family: Roboto-Medium;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.33;
+    letter-spacing: 1px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.wrap_booking .btn-more{
+    opacity: 0.56;
+    font-family: Roboto-Regular;
+    font-size: 14px;
+    line-height: 1.43;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+    display: block;
+    margin: 220px auto 0px auto;
+    text-decoration: none;
+    padding-bottom: 56px;
+    width: 77px;
+
+}
+.wrap_booking .btn-more:after{
+    content: '';
+    position: absolute;
+    background: url("../images/arrow_main.png") no-repeat;
+    height: 14px;
+    width: 24px;
+    bottom: 37px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+/* right menu page index */
+.right-menu{
+    position: absolute;
+    bottom:65px;
+    right: 0;
+}
+.right-menu ul{
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+.right-menu ul li a{
+    padding: 12px 17px 12px 0;
+    opacity: 0.64;
+    font-family: Roboto-Regular;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    text-align: right;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+}
+.right-menu ul li a.active{
+    font-family: Roboto-Medium;
+    opacity: 1;
+}
+@media (max-width: 1119px) {
+    .wrapper{
+        width: 100%;
+    }
+    .wrap_booking img {
+        margin-top: 50px;
+    }
+}
+@media (max-width: 1025px) {
+    .wrap_booking img {
+        margin-top: 0px;
+    }
+}
+
+/* modal form booking */
+.remodal h3{
+    font-family: Roboto-Light;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 0.7px;
+    text-align: left;
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 35px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+.wrap_form-booking{
+    padding-left: 35px;
+    padding-right: 35px;
+}
+.wrap_content_modal_form input[type='submit']{
+    font-family: Roboto-Medium;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #ffffff;
+    line-height: 62px;
+    width: 100%;
+    background: #345fdd;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    margin-top: 32px;
+}
+.personal_data{
+    margin-top: 32px;
+}
+.wrap_input-username{
+    width: 49.5%;
+    float: left;
+}
+.wrap_input-phon{
+    width: 49.5%;
+    float: right;
+}
+.wrap_input-phon label, .wrap_input-username label{
+    display: block;
+    text-align: left;
+    opacity: 0.64;
+    font-family: Roboto-Regular;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+}
+.wrap_input-username input, .wrap_input-phon input{
+    width: 100%;
+    background: transparent;
+    opacity: 0.5;
+    border: none;
+    border-bottom: solid 1px #ffffff;
+    font-family: Roboto-Regular;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    outline: none;
+}
+.wrap_class-auto{
+    margin-top: 32px;
+}
+.wrap_class-auto label{
+    display: block;
+    text-align: left;
+    opacity: 0.64;
+    font-family: Roboto-Regular;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+}
+.wrap_class-auto input{
+    background: transparent;
+    opacity: 0.5;
+    border: none;
+    border-bottom: solid 1px #ffffff;
+    font-family: Roboto-Regular;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 102px;
+    outline: none;
+    width: 79%;
+    position: relative;
+    text-align: left;
+}
+.wrap_class-auto input:after{
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("../images/car.png") no-repeat;
+    height: 16px;
+    width: 18px;
+}
+.wrap_coments{
+    margin-top: 32px;
+}
+.wrap_coments label{
+    display: block;
+    text-align: left;
+    opacity: 0.64;
+    font-family: Roboto-Regular;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+}
+.wrap_coments input{
+    background: transparent;
+    opacity: 0.5;
+    border: none;
+    border-bottom: solid 1px #ffffff;
+    font-family: Roboto-Regular;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    outline: none;
+    width: 100%;
+    text-align: left;
+}
+.remodal p{
+    font-family: Roboto-Regular;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: -44px;
+    padding-top: 13px;
+}
+.remodal p a{
+    letter-spacing: normal;
+    color: #66aaff;
+    text-decoration: none;
+}
+.remodal-overlay{
+
+}
+.wrap_content_modal_form{
+    background-color: #070E18;
+}
+
+/* modal true massage booking */
+.wrap_booking-true img{
+    display: block;
+    margin: 0 auto;
 }

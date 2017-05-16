@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="3276fa23-ec8e-4eb3-9c6e-83e1156c143a" name="BLAQ" url="http://blaq.nwdev.net">
+        <fileTransfer host="blaq.nwdev.net" port="21" password="dfcddff3dffedfdbdfefdf9fdf9ddfc1df8bdff2dfde" username="c9_blaq">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
