@@ -45,7 +45,18 @@ body, html{
 .clearfix:after {
     clear: both;
 }
+.wrap_content.active{
+    -webkit-filter: blur(4px);
+    -moz-filter: blur(4px);
+    -o-filter: blur(4px);
+    -ms-filter: blur(4px);
+    filter: blur(4px);
 
+}
+.wrap_booking.active{
+    opacity: 0;
+    visibility: hidden;
+}
 /*header*/
 header{
     z-index: 99999;
@@ -231,7 +242,7 @@ header{
 }
 
 /* modal form booking */
-.remodal h3{
+.wrap_content_modal_form h3{
     font-family: Roboto-Light;
     font-size: 20px;
     font-weight: 300;
@@ -362,16 +373,17 @@ header{
     width: 100%;
     text-align: left;
 }
-.remodal p{
+.remodal span{
     font-family: Roboto-Regular;
     font-size: 14px;
     letter-spacing: 0.4px;
     text-align: center;
     color: #ffffff;
     margin-bottom: -44px;
+    display: block;
     padding-top: 13px;
 }
-.remodal p a{
+.remodal span a{
     letter-spacing: normal;
     color: #66aaff;
     text-decoration: none;
@@ -387,4 +399,27 @@ header{
 .wrap_booking-true img{
     display: block;
     margin: 0 auto;
+}
+.wrap_booking-true h3{
+    margin-top: 56px;
+    margin-bottom: 0;
+    font-family: Roboto-Light;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 1.25;
+    letter-spacing: 0.6px;
+    text-align: center;
+    color: #ffffff;
+
+}
+.wrap_booking-true p{
+    margin-top: 9px;
+    margin-bottom: 0;
+    opacity: 0.8;
+    font-family: Roboto-Regular;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
 }

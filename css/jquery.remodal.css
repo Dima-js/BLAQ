@@ -55,7 +55,9 @@ body.remodal_active .remodal-bg {
     opacity: 0;
     /*background: rgba(33, 36, 46, 0.95);*/
 
-    background:  rgba(17, 27, 36, 0.90);
+    background:  rgba(22, 32, 41, 0.8);
+
+
     /* IE6–IE8 */
     /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#EE21242E, endColorstr=#EE21242E);*/
     zoom: 1;
