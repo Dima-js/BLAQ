@@ -305,6 +305,7 @@ header{
 }
 .wrap_class-auto{
     margin-top: 32px;
+    position: relative;
 }
 .wrap_class-auto label{
     display: block;
@@ -329,14 +330,38 @@ header{
     padding-left: 102px;
     outline: none;
     width: 79%;
-    position: relative;
     text-align: left;
 }
-.wrap_class-auto input:after{
+
+.wrap_class-auto select{
+    position: absolute;
+    top:23px;
+    left: 32px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-family: Roboto-Regular;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.wrap_class-auto option{
+    background: transparent;
+    opacity: 0.5;
+    font-family: Roboto-Regular;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+}
+
+.wrap_class-auto:before{
     content: ' ';
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 24px;
+    left: 2px;
     background: url("../images/car.png") no-repeat;
     height: 16px;
     width: 18px;
@@ -392,6 +417,8 @@ header{
     width: 552px;
     margin: 0 auto;
     position: relative;
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 .close-modal{
     position: absolute;
@@ -436,7 +463,7 @@ header{
     border-radius: 2px;
     background-color: #070d17;
     position: relative;
-    width: 1120px;
+    max-width: 1120px;
     margin: 0 auto;
 }
 .wrap_apps h3{
@@ -469,7 +496,6 @@ header{
     cursor:pointer;
     display:block;
     float:left;
-    padding:5px 0px;
     margin-right: 24px;
     background:transparent;
     opacity: 0.56;
@@ -483,10 +509,10 @@ header{
 }
 
 .tabs_apps ul li button{
-    padding: 0;
     font-family: Roboto-Regular;
     font-size: 14px;
     line-height: 1.43;
+    padding:5px 0px;
     letter-spacing: 1.1px;
     text-align: left;
     color: #ffffff;
@@ -557,4 +583,9 @@ header{
     margin-bottom: 12px;
     float: left;
     margin-right: 36px;
+    max-width: 100%;
 }
+
+/* modal poezdka */
+
+
