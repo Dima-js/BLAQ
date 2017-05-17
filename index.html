@@ -9,9 +9,10 @@
     <link rel="stylesheet" href="css/magnific-popup.css">
     <!--<link rel="stylesheet" type="text/css" href="css/jquery.remodal.css">-->
     <!--<script src="js/jquery.remodal.js"></script>-->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/jquery.magnific-popup.js"></script>
+    <script src="js/form.js"></script>
 </head>
 <body>
     <header>
@@ -23,7 +24,7 @@
                     <div class="wrap_top-menu">
                         <ul class="clearfix">
                             <li>
-                                <a href="#">флот</a>
+                                <a href="#apps" class="popup-modal">флот</a>
                             </li>
                             <li>
                                 <a href="#">тарифы</a>
@@ -74,29 +75,29 @@
         <a class="close-modal" href="#"></a>
         <div class="wrap_content_modal_form">
             <h3>Бронирование поездки</h3>
-            <form action="#" method="POST">
+            <form action="#" method="POST" id="booking">
                 <div class="wrap_form-booking clearfix">
                     <div class="personal_data clearfix">
                         <div class="wrap_input-username">
                             <label>Ваше имя</label>
-                            <input type="text" placeholder="Как к вам обращаться?">
+                            <input type="text" placeholder="Как к вам обращаться?" required>
                         </div>
                         <div class="wrap_input-phon">
                             <label>Телефон</label>
-                            <input type="text" placeholder="Введите ваш номер телефона" >
+                            <input type="text" placeholder="Введите ваш номер телефона" required>
                         </div>
                     </div>
                     <div class="wrap_class-auto">
                         <label>Класс автомобиля</label>
-                        <input type="text" placeholder="Mersedes Benz E-Class, BMW5, Audi A6">
+                        <input type="text" placeholder="Mersedes Benz E-Class, BMW5, Audi A6" required>
                     </div>
                     <div class="wrap_coments">
                         <label>Предпочтения и комментарии</label>
-                        <input type="text" placeholder="Выберите, что вам требуется и добавте комментарий">
+                        <input type="text" placeholder="Выберите, что вам требуется и добавте комментарий" required>
                     </div>
 
                 </div>
-                <a href="#modal2" class="btn-m close-modal" >забронировать поездку</a>
+                <a href="#modal2" class="popup-modal" >забронировать поездку</a>
                 <input type="submit" class="btn_save" value="забронировать поездку" >
             </form>
         </div>
@@ -113,6 +114,64 @@
                подтвердить вашу поездку и уточнить детали.</p>
        </div>
     </div>
+    <div id="apps" class="mfp-hide white-popup-block wrap-modal1">
+
+        <div class="wrap_apps">
+            <a class="close-modal" href="#"></a>
+            <h3>Программные продукты BLAQ</h3>
+            <div class="tabs_apps">
+                <ul class="clearfix">
+                    <li><button> blaq core</button></li>
+                    <li><button> blaq chauffeurs</button></li>
+                    <li><button disabled>blaq partners</button></li>
+                    <li><button disabled> blaq portals</button></li>
+                </ul>
+
+                <div class="wrap_content-tabs">
+                    <div>
+                        <div class="wrap_data-tab">
+                            <p>
+                                Пройдя весь цикл технического обеспечения своей деятельности от ручного контроля в самом начале до аренды сторонних ИТ решений на поздних этапах, BLAQ создал с нуля собственный программный продукт BLAQ Core, решающий задачи (1) диспетчеризации потока клиентских заказов и (2) администрирования бизнес-процессов, обеспечивающих исполнение этих заказов.
+                            </p>
+                            <img src="images/map.png">
+                            <p>
+                                Цель разработки BLAQ Core: обеспечение стабильного уровня непревзойденного качества услуг посредством (1) минимизации человеческого фактора путём максимальной автоматизации бизнес-процессов, и (2) минимизации времени отклика с момента поступления клиентского запроса до момента предоставления практического решения на такой запрос.
+                            </p>
+                            <img src="images/tab1_2.png">
+                            <img src="images/tab1_3.png">
+                            <p>
+                                В основе разработок был использован самый современный технологический стек с направленностью на обеспечение 4х ключевых параметров: производительность, стабильность, безопасность и масштабируемость. BLAQ Core предоставляет пользователю интерфейсное веб решение с распределением уровней доступа/просмотра и работы в 5-блочной системе: Заказы, Клиенты, Флот, Водители, Администрирование, - и встроенной IP-телефонии.
+                            </p>
+                            <p>
+                                Наличие собственной команды разработчиков позволяет BLAQ проактивно реагировать на изменения в бизнесе и сохранять приверженность поставленным целям и принципам.
+                            </p>
+                            <img src="images/Bitmap.png">
+                        </div>
+                    </div>
+                        <div>
+                            <div class="wrap_data-tab">
+                                <p>
+                                    BLAQ Chauffeurs представляет внешнюю часть программного продукта BLAQ, отвечающую за приём, обработку и расчёт стоимости оказанной услуги на стороне водителя.
+                                </p>
+                                <img src="images/phone.png" class="big_img-block">
+                                <p>
+                                    BLAQ Chauffeurs представлено мобильным приложением с адаптивностью под смартфоны и планшеты с регистрируемым доступом к заказам и администрированию личных данных водителя.
+                                </p>
+                                <p>
+                                    Цель разработки BLAQ Chauffeurs: реализация ценностей, важных для наших водителей и обеспечивающих (1) максимальную оптимизацию и загрузку рабочей смены со снижением простоев и холостого хода; и (2) сохранность и онлайн доступ к важной информации, касающейся истории поездок, времени работы и пробега, сумм заработанной выручки и бонусов, эксплуатационных затрат и штрафов.
+                                </p>
+                                <p>
+                                    Доступный функционал BLAQ Chauffeurs позволяет водителю быть постоянно в курсе изменений, касающихся поездки без необходимости дополнительных звонков диспетчеру, а также быть в курсе личных предпочтений и ожиданий пассажиров, что напрямую сказывается на уровне клиентского удовлетворения и вознаграждения конкретного водителя пассажиром. Согласно статистике, более 20% дохода наших водителей, помимо основного дохода за осуществления самих поездок, формируется суммами прямого вознаграждения от благодарных клиентов.
+                                </p>
+                                <a href="#">Подробнее о том, как стать водителем BLAQ</a>
+                            </div>
+                        </div>
+                    <!--<div>Третье содержимое</div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 
 </body>

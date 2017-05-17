@@ -48,40 +48,10 @@ body, html{
 .main-wrapper{
     padding-top: 64px;
 }
-.wrap_content.active{
-    -webkit-filter: blur(4px);
-    -moz-filter: blur(4px);
-    -o-filter: blur(4px);
-    -ms-filter: blur(4px);
-    filter: blur(4px);
 
-}
-.wrap_booking.active{
-    opacity: 0;
-    visibility: hidden;
-}
-.wrap_content.active1{
-    -webkit-filter: blur(4px);
-    -moz-filter: blur(4px);
-    -o-filter: blur(4px);
-    -ms-filter: blur(4px);
-    filter: blur(4px);
-
-}
-.wrap_booking.active1{
-    opacity: 0;
-    visibility: hidden;
-}
-main.active1{
-    -webkit-filter: blur(4px);
-    -moz-filter: blur(4px);
-    -o-filter: blur(4px);
-    -ms-filter: blur(4px);
-    filter: blur(4px);
-}
 /*header*/
 header{
-    z-index: 99999;
+    z-index: 1042;
     position: fixed;
     width: 100%;
 }
@@ -143,6 +113,7 @@ header{
     color: #fff;
     opacity: 0.64;
     letter-spacing: 0.5px;
+    outline: none;
 }
 /*content index*/
 .wrap_content{
@@ -412,14 +383,15 @@ header{
     color: #66aaff;
     text-decoration: none;
 }
-.remodal-overlay{
 
-}
 .wrap_content_modal_form{
     background-color: #070E18;
 }
-.mfp-auto-cursor .mfp-content{
-    width: 552px!important;
+
+#modal1{
+    width: 552px;
+    margin: 0 auto;
+    position: relative;
 }
 .close-modal{
     position: absolute;
@@ -457,4 +429,132 @@ header{
     letter-spacing: normal;
     text-align: center;
     color: #ffffff;
+}
+/* modal apps */
+.wrap_apps {
+    padding: 35px 35px 54px 35px;
+    border-radius: 2px;
+    background-color: #070d17;
+    position: relative;
+    width: 1120px;
+    margin: 0 auto;
+}
+.wrap_apps h3{
+    font-family: Roboto-Light;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 1.25;
+    letter-spacing: 0.6px;
+    text-align: left;
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ /* apps tab*/
+
+.tabs_apps{
+    display:inline-block;
+}
+/*.tabs_apps > div{*/
+    /*padding-top:10px;*/
+/*}*/
+.tabs_apps ul{
+    margin:0px;
+    padding:0px;
+    margin-top: 19px;
+
+}
+.tabs_apps ul li{
+    margin:0px;
+    cursor:pointer;
+    display:block;
+    float:left;
+    padding:5px 0px;
+    margin-right: 24px;
+    background:transparent;
+    opacity: 0.56;
+    font-family: Roboto-Regular;
+    font-size: 14px;
+    line-height: 1.43;
+    letter-spacing: 1.1px;
+    text-align: left;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.tabs_apps ul li button{
+    padding: 0;
+    font-family: Roboto-Regular;
+    font-size: 14px;
+    line-height: 1.43;
+    letter-spacing: 1.1px;
+    text-align: left;
+    color: #ffffff;
+    text-transform: uppercase;
+    background:transparent;
+    outline: none;
+    border: none;
+}
+.tabs_apps ul li button[disabled]{
+    opacity: 0.16;
+}
+.tabs_apps ul li.active, .tabs_apps ul li.active:hover{
+   border-bottom:3px solid #345fdd;
+    opacity: 1;
+
+}
+#apps .close-modal{
+    top:24px!important;
+    right: 24px!important;
+    z-index: 999999;
+}
+#apps{
+    margin-top: 96px;
+
+}
+.wrap_data-tab{
+    padding-top: 14px;
+}
+.wrap_apps:after{
+    content: '';
+    opacity: 0.16;
+    border-bottom: solid 1px #ffffff;
+    width: 100%;
+    position: absolute;
+    top: 126px;
+    left: 0;
+}
+.wrap_data-tab p{
+    width: 63%;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    opacity: 0.8;
+    font-family: Roboto-Regular;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #ffffff;
+}
+.wrap_data-tab a{
+    font-family: Roboto-Regular;
+    font-size: 16px;
+    text-align: left;
+    color: #66aaff;
+    margin-top: 48px;
+    margin-bottom: 47px;
+    display: block;
+}
+.big_img-block{
+    display: block;
+    float: none!important;
+    text-align: left;
+    margin-top: 34px!important;
+    margin-bottom: 33px!important;
+}
+.wrap_data-tab img{
+    margin-top: 12px;
+    margin-bottom: 12px;
+    float: left;
+    margin-right: 36px;
 }

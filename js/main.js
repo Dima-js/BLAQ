@@ -9,30 +9,49 @@ $(document).ready(function () {
         e.preventDefault();
         $.magnificPopup.close();
     });
-});
-// $(document).ready(function () {
-//
-//     $(".btn-booking").click(function(){
-//         $(".wrap_content").addClass("active");
-//         $(".wrap_booking").addClass("active");//добовляем класс
-//     });
-//     $(".remodal-overlay").click(function(){
-//         $(".wrap_content").removeClass("active");
-//         $(".wrap_booking").removeClass("active");
-//     });
-//     $(".remodal-close").click(function(){
-//         $(".wrap_content").removeClass("active");
-//         $(".wrap_booking").removeClass("active");//добовляем класс
-//     });
-//     $(".btn-m").click(function(){
-//         $("main").addClass("active1");
-//         $(".wrap_booking").addClass("active");//добовляем класс
-//     });
-    // $(".remodal-overlay").click(function(){
-    //     $("main").removeClass("active1");
-    //     $(".wrap_booking").parent().removeClass("active");
-    // });
+    $("#booking").submit(function(event) {
+        event.preventDefault();
+        $(".wrap_booking").addClass("active");
+    });
 
-// });
+/* tabs*/
+    $(document).ready(function(){
+        $(".tabs_apps").lightTabs();
+    });
+
+    (function($){
+        jQuery.fn.lightTabs = function(options){
+
+            var createTabs = function(){
+                tabs = this;
+                i = 0;
+
+                showPage = function(i){
+                    $(tabs).children("div").children("div").hide();
+                    $(tabs).children("div").children("div").eq(i).show();
+                    $(tabs).children("ul").children("li").removeClass("active");
+                    $(tabs).children("ul").children("li").eq(i).addClass("active");
+                    $(tabs).children("li").children("button").removeClass("active");
+                    $(tabs).children("li").children("button").eq(i).addClass("active");
+
+                }
+
+                showPage(0);
+
+                $(tabs).children("ul").children("li").each(function(index, element){
+                    $(element).attr("data-page", i);
+                    i++;
+                });
+
+                $(tabs).children("ul").children("li").click(function(){
+                    showPage(parseInt($(this).attr("data-page")));
+                });
+            };
+            return this.each(createTabs);
+        };
+    })(jQuery);
+
+});
+
 
 
