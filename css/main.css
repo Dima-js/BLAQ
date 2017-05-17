@@ -45,6 +45,9 @@ body, html{
 .clearfix:after {
     clear: both;
 }
+.main-wrapper{
+    padding-top: 64px;
+}
 .wrap_content.active{
     -webkit-filter: blur(4px);
     -moz-filter: blur(4px);
@@ -57,6 +60,25 @@ body, html{
     opacity: 0;
     visibility: hidden;
 }
+.wrap_content.active1{
+    -webkit-filter: blur(4px);
+    -moz-filter: blur(4px);
+    -o-filter: blur(4px);
+    -ms-filter: blur(4px);
+    filter: blur(4px);
+
+}
+.wrap_booking.active1{
+    opacity: 0;
+    visibility: hidden;
+}
+main.active1{
+    -webkit-filter: blur(4px);
+    -moz-filter: blur(4px);
+    -o-filter: blur(4px);
+    -ms-filter: blur(4px);
+    filter: blur(4px);
+}
 /*header*/
 header{
     z-index: 99999;
@@ -67,7 +89,7 @@ header{
     background: #070d17;
 }
 .wrapper{
-    width: 1120px;
+    width: 1140px;
     margin: 0 auto;
 }
 .wrap{
@@ -172,6 +194,7 @@ header{
     color: #ffffff;
     text-transform: uppercase;
     text-decoration: none;
+    outline: none;
 }
 .wrap_booking .btn-more{
     opacity: 0.56;
@@ -242,6 +265,7 @@ header{
 }
 
 /* modal form booking */
+
 .wrap_content_modal_form h3{
     font-family: Roboto-Light;
     font-size: 20px;
@@ -278,11 +302,11 @@ header{
     margin-top: 32px;
 }
 .wrap_input-username{
-    width: 49.5%;
+    width: 49.8%;
     float: left;
 }
 .wrap_input-phon{
-    width: 49.5%;
+    width: 49.8%;
     float: right;
 }
 .wrap_input-phon label, .wrap_input-username label{
@@ -373,7 +397,7 @@ header{
     width: 100%;
     text-align: left;
 }
-.remodal span{
+.wrap-modal1 span{
     font-family: Roboto-Regular;
     font-size: 14px;
     letter-spacing: 0.4px;
@@ -381,9 +405,9 @@ header{
     color: #ffffff;
     margin-bottom: -44px;
     display: block;
-    padding-top: 13px;
+    padding-top: 44px;
 }
-.remodal span a{
+.wrap-modal1 span a{
     letter-spacing: normal;
     color: #66aaff;
     text-decoration: none;
@@ -393,6 +417,17 @@ header{
 }
 .wrap_content_modal_form{
     background-color: #070E18;
+}
+.mfp-auto-cursor .mfp-content{
+    width: 552px!important;
+}
+.close-modal{
+    position: absolute;
+    top: -35px;
+    right: -30px;
+    background: url("../images/Close_big.png");
+    height: 24px;
+    width: 26px;
 }
 
 /* modal true massage booking */

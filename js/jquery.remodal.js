@@ -78,7 +78,7 @@
      */
     var lockScreen = function () {
         $("html, body").addClass(pluginName + "_lock");
-        $(document.body).css("padding-right", "+=" + getScrollbarWidth());
+        // $(document.body).css("padding-right", "+=" + getScrollbarWidth());
     };
 
     /**
@@ -86,7 +86,7 @@
      */
     var unlockScreen = function () {
         $("html, body").removeClass(pluginName + "_lock");
-        $(document.body).css("padding-right", "-=" + getScrollbarWidth());
+        // $(document.body).css("padding-right", "-=" + getScrollbarWidth());
     };
 
     /**
